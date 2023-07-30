@@ -2,7 +2,7 @@
 Implement A Complete Data Pipeline using Python, AWS and Spotipy API
 
 ## Introduction
-Building an end to end data pipeline to extract data from spotify api, store it in AWS S3, pre-process and transform the data using Python/AWS Lamda functions and display/analyze the data using AWS Glue and Athena.
+Build an end to end data pipeline to extract data from spotify api, store it in AWS S3, pre-process and transform the data using Python/AWS Lamda functions and display/analyze the data using AWS Glue and Athena.
 
 ## Dataset/API Used
 This API contains all the information about the music, albumns, artits and more [Spotipy API](https://developer.spotify.com/)
