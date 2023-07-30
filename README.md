@@ -1,5 +1,5 @@
 # Spotfiy Data Pipeline End-To-End Python Data Engineering Project
-Implement Complete Data Pipeline using Python, AWS and Spotipy API
+Implement A Complete Data Pipeline using Python, AWS and Spotipy API
 
 ## Introduction
 Building an end to end data pipeline to extract data from spotify api, store it in AWS S3, pre-process and transform the data using Python/AWS Lamda functions and display/analyze the data using AWS Glue and Athena.
