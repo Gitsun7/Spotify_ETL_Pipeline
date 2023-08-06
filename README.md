@@ -33,4 +33,4 @@ Store files on S3.
 Building Analytics Tables on data files using Glue and Athena.
 
 ## Data Pipeline Flow
-Extract Data Spotipy API -> Lambda Trigger(Every one hour) -> Run Extract Code -> Store Raw Data In S3 -> Trigger Transform Function -> Transform Data and Load Into S3 -> Query Using Athena 
+Extract Data Spotipy API -> Lambda Trigger(Every one hour) -> Run Extract Code -> Store Raw Data In S3 -> Trigger Transform Function -> Transform Data and Load Into S3 -> Query Using Athena.
