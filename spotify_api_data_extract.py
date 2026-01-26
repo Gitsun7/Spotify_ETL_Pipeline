@@ -5,7 +5,18 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import boto3
 from datetime import datetime
 
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+
 def lambda_handler(event, context):
+    logger.info("Spotify API data extraction started")
     client_id = os.environ.get('client_id')
     client_secret = os.environ.get('client_secret')
     client_credential_manager = SpotifyClientCredentials(client_id=client_id,client_secret=client_secret)
