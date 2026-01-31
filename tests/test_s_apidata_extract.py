@@ -23,12 +23,12 @@ def test_lambda_handler(mocker):
 
     # Replace spotipy.Spotify with fake client
     mocker.patch(
-        "api_extract.spotipy.Spotify",
+        "spotify_api_data_extract.spotipy.Spotify",
         return_value=fake_spotify_client
     )
 
     # Mock S3 upload function
-    mock_upload = mocker.patch("api_extract.upload_to_s3")
+    mock_upload = mocker.patch("spotify_api_data_extract.upload_to_s3")
 
     # Call lambda handler
     lambda_handler({}, {})
