@@ -4,6 +4,15 @@ import pandas as pd
 from datetime import datetime
 from io import StringIO
 
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
 def get_albums(raw_data):
     album_list = []
     for albums in raw_data['items']:
